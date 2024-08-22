@@ -11,13 +11,13 @@
         <a href="#" class="btn-contact">Contato</a>
     </div>
     <ul class="navbar-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Planos e valores</a></li>
-        <li><a href="#">Parceiros</a></li>
-        <li><a href="#">Social</a></li>
-        <li><a href="#">Obituário</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a onclick="window.location.replace('f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'); return false;">Home</a></li>
+        <li><a onclick="window.location.replace('f?p=&APP_ID.:20:&APP_SESSION.::&DEBUG.:::'); return false;">Sobre</a></li>
+        <li><a onclick="window.location.replace('f?p=&APP_ID.:30:&APP_SESSION.::&DEBUG.:::'); return false;">Planos e valores</a></li>
+        <li><a onclick="window.location.replace('f?p=&APP_ID.:40:&APP_SESSION.::&DEBUG.:::'); return false;">Parceiros</a></li>
+        <li><a onclick="window.location.replace('f?p=&APP_ID.:50:&APP_SESSION.::&DEBUG.:::'); return false;">Social</a></li>
+        <li><a onclick="window.location.replace('f?p=&APP_ID.:60:&APP_SESSION.::&DEBUG.:::'); return false;">Obituário</a></li>
+        <li><a onclick="window.location.replace('f?p=&APP_ID.:70:&APP_SESSION.::&DEBUG.:::'); return false;">Blog</a></li>
     </ul>
 </nav>
 
@@ -48,6 +48,11 @@
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    cursor: pointer; /* Força o cursor a ser uma mãozinha */
+    transition: color 0.3s ease; /* Para transição suave ao passar o mouse */
+}
+.navbar-links li a:hover {
+    color: blue; /* A cor que você deseja ao passar o mouse */
 }
 
 .navbar-contact .btn-contact {
@@ -103,6 +108,7 @@
         background-color: #fff;
         padding: 20px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
 
     .navbar-toggle {
@@ -123,11 +129,6 @@
         left: 50%;
         transform: translateX(-50%);
     }
-
-    .admin-btn {
-        display: none; /* O botão Admin será exibido via JavaScript se o usuário tiver permissão */
-    }
-}
 
 
 </style>
